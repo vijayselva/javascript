@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>2D Breakout Game using javascript</title>
+	<style type="text/css">
+		*{
+			padding: 0; margin: 0;
+		}
+		canvas{
+			background: #eee; 
+			display: block; 
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="gamePlace" width="480" height="320"></canvas>
+<script type="text/javascript">
+	var canvas = document.getElementById('gamePlace');
+	var ctx = canvas.getContext("2d");
+
+	ctx.beginPath();
+	ctx.rect(20,40,50,50);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.arc(240, 160, 20, 0, Math.PI*2);
+	ctx.fillStyle = "green";
+	ctx.stroke();
+	ctx.closePath();
+
+</script>
+</body>
+</html>
